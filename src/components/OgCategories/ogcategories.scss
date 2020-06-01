@@ -1,0 +1,78 @@
+.categories-container {
+
+
+  & .categories-list {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    & .categories-item:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    & .categories-item{
+      padding: 10px;
+      width: 255px;
+      height: 255px;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+
+      & img {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        height: 200px;
+        transition: .3s;
+      }
+      
+      &:hover h1 {
+        font-size: 27px;
+      }
+
+      &.strength:hover {
+        background-image: linear-gradient(to right, #fda50e, #ff7e0d);
+      }
+
+      &.conditioning:hover {
+        background-image: linear-gradient(to right, #7318e9, #8513e2);
+      }
+      
+      &:hover img {
+        transform: scale(1.1);
+      }
+      
+      &.strength {
+        background-image: linear-gradient(to right, #f9b439, #fa9138);
+      }
+      
+      &.conditioning {
+        background-image: linear-gradient(to right, #863be7, #9535e5);
+      }
+      
+      &.cardio {
+        background-image: linear-gradient(to right, #47b9d2, #68d9d3);
+      }
+      
+      &.dance-fitness {
+        background-image: linear-gradient(to right, #ff33c0, #f42b86);
+      }
+
+      & h1 {
+        align-self: flex-end;
+        color: #fff;
+        margin-bottom: 10px;
+        transition: .3s;
+      }
+    }
+  }
+}

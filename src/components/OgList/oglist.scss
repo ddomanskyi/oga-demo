@@ -1,0 +1,37 @@
+.oga-list {
+  display: flex;
+  flex-direction: column;
+
+  & .oga-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .oga-list-title {
+      font-size: 25px;
+      font-weight: 600;
+      color: #fff;
+    }
+    
+    & .oga-list-button {
+      background: transparent;
+      width: 100px;
+      height: 30px;
+      color: #fff;
+      border-radius: 25px;
+      border: 3px solid #fff;
+      transition: .3s;
+      font-weight: 900;
+      cursor: pointer;
+  
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  & .oga-list-content {
+
+  }
+}

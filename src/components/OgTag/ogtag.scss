@@ -1,0 +1,64 @@
+.og-tag {
+  background: transparent;
+  padding: 3px 8px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  transition: .3s;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  &:hover {
+    background: #fff;
+  }
+  
+  &:hover .og-tag-text {
+    color: #000;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.pink {
+    background-image: linear-gradient(90deg,#fd32b9,#f52b82);
+    border: none;
+    padding: 5px 9px;
+    
+    &:hover {
+      background: #fff;
+    }
+    
+    &:hover .og-tag-text {
+      background-image: linear-gradient(90deg,#fd3b8f,#fc41be);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
+  &.blue {
+    background-image: linear-gradient(90deg,#46b9d2,#67d9d3);
+    border: none;
+    padding: 5px 9px;
+    
+    &:hover {
+      background: #fff;
+    }
+
+    &:hover .og-tag-text {
+      background-image: linear-gradient(90deg,#67d9d3,#46b9d2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  & .og-tag-text {
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+  }
+}
